@@ -1,0 +1,16 @@
+# Ignorer les dépendances frontend
+frontend/node_modules/
+
+# Ignorer l'environnement virtuel Python
+backend/venv/
+backend/__pycache__/
+
+# Ignorer fichiers systèmes
+.DS_Store
+Thumbs.db
+
+# Ignorer logs
+*.log
+
+# Ignorer fichiers temporaires
+*.pyc

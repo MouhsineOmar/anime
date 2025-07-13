@@ -1,0 +1,41 @@
+@keyframes move {
+    0% { transform: translate(0, 0); opacity: 1; }
+    50% { transform: translate(20px, -10px); opacity: 0.7; }
+    100% { transform: translate(0, 0); opacity: 1; }
+  }
+  
+  @keyframes floatEmoji {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+  }
+  
+  .animatedCircle {
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: move 6s infinite ease-in-out;
+    filter: brightness(1.1);
+    box-shadow: 0 4px 12px rgba(138, 90, 223, 0.3);
+    pointer-events: none;
+    transition: background 1s ease;
+  }
+  
+  /* 🎨 MoodMind Dégradés + Rouge */
+  .circle1 { background: linear-gradient(45deg, #8a5adf, #c799f9); }
+  .circle2 { background: linear-gradient(45deg, #fbc75d, #ffd66c); }
+  .circle3 { background: linear-gradient(45deg, #a45aff, #d1b3ff); }
+  .circle4 { background: linear-gradient(45deg, #8a5adf, #6b2ebf); }
+  .circle5 { background: linear-gradient(45deg, #c59aff, #fbc75d); }
+  .circle6 { background: linear-gradient(45deg, #ff4b4b, #ff8e8e); } /* ❤️ Rouge intense */
+  
+  .emoji {
+    font-size: 28px;
+    animation: floatEmoji 2.5s ease-in-out infinite;
+    z-index: 2;
+  }
+  
+  

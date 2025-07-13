@@ -1,0 +1,118 @@
+.navbar {
+    background-color: white;
+    padding: 10px 20px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo-home-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-logo {
+    height: 70px;
+    margin-right: 15px;
+  }
+  
+  .home-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+  }
+  
+  .signup-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 50px 20px;
+    min-height: 100vh;
+    background-color: #f8f9fc;
+    gap: 50px;
+  }
+  
+  .signup-animation {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .signup-form {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+  }
+  
+  .signup-form h2 {
+    margin-bottom: 20px;
+    color: #4a148c;
+    font-weight: bold;
+  }
+  
+  .input-group {
+    position: relative;
+    margin-bottom: 15px;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 12px 40px 12px 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-family: "Cairo", sans-serif;
+    font-size: 16px;
+  }
+  
+  .input-group .icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+  }
+  
+  .login-btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #8a5adf;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-btn:hover {
+    background-color: #9e6dfb;
+  }
+  
+  .effacer-formulaire {
+    margin-top: 15px;
+    font-size: 14px;
+    color: gray;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .effacer-formulaire label {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  .alert {
+    margin-top: 15px;
+    color: red;
+  }
+  

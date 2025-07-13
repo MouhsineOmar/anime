@@ -1,0 +1,141 @@
+/* 🎨 Barre d'en-tête */
+.header-appbar {
+  background-color: #121212 !important; /* noir profond */
+  box-shadow: 0 2px 5px rgba(255, 0, 0, 0.2); /* ombre rouge légère */
+  height: 80px;
+}
+.header-toolbar {
+  height: 100%;
+}
+
+/* 🔰 Logo */
+/* 🎨 Barre d'en-tête */
+.header-appbar {
+  background-color: #121212 !important; /* noir profond */
+  box-shadow: 0 2px 5px rgba(255, 0, 0, 0.2); /* ombre rouge légère */
+  height: 80px;
+}
+.header-toolbar {
+  height: 100%;
+}
+
+/* 🔰 Logo */
+.header-logo {
+  display: flex;
+  align-items: center;
+  margin: 0 50px 0 20px;
+  width: 200px;
+  position: relative;
+  color: white;
+}
+.logo-img {
+  height: 65px;
+  width: 65px; /* ✅ Assurez une forme carrée */
+  object-fit: cover;
+  border-radius: 50%; /* ✅ Cercle parfait */
+  overflow: hidden;
+  border: 2px solid #ff0000; /* Optionnel : bordure rouge */
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1000;
+}
+
+
+/* 🔗 Boutons de navigation */
+.nav-buttons {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  gap: 30px;
+}
+.nav-btn {
+  color: #ffffff; /* blanc pur */
+  font-weight: bold;
+  text-transform: none;
+}
+.nav-btn:hover {
+  color: #ff0000; /* rouge vif */
+  background-color: rgba(255, 0, 0, 0.1); /* fond rouge très léger */
+}
+.nav-icon {
+  margin-right: 5px;
+  color: rgba(255, 255, 255, 0.5); /* icône gris clair */
+}
+
+/* 🔐 Connexion */
+.login-link {
+  color: #ffffff;
+  margin-left: 20px;
+  text-decoration: none;
+}
+.login-btn {
+  background-color: #ff0000; /* rouge vif */
+  color: white;
+  border-radius: 20px;
+  width: 120px;
+  height: 40px;
+}
+.login-btn:hover {
+  background-color: #b30000; /* rouge foncé */
+}
+
+/* 🎛️ Icônes supplémentaires */
+.menu-icon {
+  margin-right: 10px;
+  color: #ff4d4d; /* rouge clair */
+}
+.small-icon {
+  width: 24px;
+  margin-right: 10px;
+}
+
+
+/* 🔗 Boutons de navigation */
+.nav-buttons {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  gap: 30px;
+}
+.nav-btn {
+  color: #ffffff; /* blanc pur */
+  font-weight: bold;
+  text-transform: none;
+}
+.nav-btn:hover {
+  color: #ff0000; /* rouge vif */
+  background-color: rgba(255, 0, 0, 0.1); /* fond rouge très léger */
+}
+.nav-icon {
+  margin-right: 5px;
+  color: rgba(255, 255, 255, 0.5); /* icône gris clair */
+}
+
+/* 🔐 Connexion */
+.login-link {
+  color: #ffffff;
+  margin-left: 20px;
+  text-decoration: none;
+}
+.login-btn {
+  background-color: #ff0000; /* rouge vif */
+  color: white;
+  border-radius: 20px;
+  width: 120px;
+  height: 40px;
+}
+.login-btn:hover {
+  background-color: #b30000; /* rouge foncé */
+}
+
+/* 🎛️ Icônes supplémentaires */
+.menu-icon {
+  margin-right: 10px;
+  color: #ff4d4d; /* rouge clair */
+}
+.small-icon {
+  width: 24px;
+  margin-right: 10px;
+}
