@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './Login.css';
 import './Reset.css';
 import AuthService from "../Services/auth.service";
@@ -15,15 +15,10 @@ const Login = () => {
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState("");
 
-  useEffect(() => {
-    const user = AuthService.getCurrentUser();
-    if (user) redirectByRole(user.role);
-  }, []);
-
   const redirectByRole = (role) => {
     const r = role?.toLowerCase();
-    if (r === "admin") navigate("/PageEtudiants");
-    else navigate("/PageEtudiants");
+    if (r === "admin") navigate("/recommendation");
+    else navigate("/recommendation"); // tu peux changer par /profile si besoin
   };
 
   const handleCancel = () => {
@@ -46,7 +41,11 @@ const Login = () => {
 
     try {
       const user = await AuthService.login(email, password);
-      redirectByRole(user.role);
+
+      // ✅ Sauvegarder les données essentielles dans localStorage (sans mot de passe)
+      localStorage.setItem("user_id", user.id);
+
+      redirectByRole(user.type);
     } catch (error) {
       setMessage(error.message || "Erreur lors de la connexion.");
       setLoading(false);
@@ -105,7 +104,7 @@ const Login = () => {
             </div>
 
             <button className="login-btn" type="submit" disabled={loading}>
-              {loading ? "Connexion en cours..." : "connexion"}
+              {loading ? "Connexion en cours..." : "Connexion"}
             </button>
 
             {message && (
